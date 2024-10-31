@@ -1,50 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>halamanku</title>
+    <title>Landing Page Daftar Kue Kesukaan</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: top;
+            align-items: center;
+            flex-direction: column;
+            background-color: #f8f8f8;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .cake-list {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .cake-item {
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .satu {
+            width: 150;
+            height: 150;
+            background-color: #b86b4d;
+            top: 20px;
+            left: 20px;
+        }
+
+        .dua {
+            width: 150px;
+            height: 150px;
+            background-color: #ffe8bd;
+            top: 20px;
+            left: 20px;
+        }
+
+        .cake-item h3 {
+            font-size: 1.2rem;
+            color: #161616;
+        }
+
+        .cake-item p {
+            font-size: 1rem;
+            color: #080808;
+        }
+    </style>
 </head>
-<body background="123.jpg">
-    <h1>daftar absensi</h1>
-    <h3>1. ponyo</h3>
-    <h3>2. sousuke</h3>
-    <h3>3. lisa</h3>
 
-    <p>aku dinginan diatas istana yang retak ku menutup mulut berisik berkata lirih adakah cinta yang
-         sempurna di dunia ada kah hati yang tak bisa luka  apakah ku pantas bahagia sejuta pentyair di dunia aku 
-         hampiri berta apakah cinta sejati itu ada pantaskah ku ,arah pada takdir berteriak lantang melawan nasib ku hanya manusia  </p>
+<body>
+    <div class="container" style="position: absolute;">
+        <h1>Daftar varian good day favoritqu!</h1>
+        <p>Pilih rasa favoritmu dan nikmati kelezatannya!</p>
 
-         <!--tag pembuka tabel-->
-         <table border="2">
-            <tr>
-                <th>no</th>
-                <th>nama</th>
-                <th>nilai</th>
-            </tr>
-            <!--baris data-->
-            <tr>
-                <td>1.</td>
-                <td>ponyo</td>
-                <td>10</td>
-            </tr>
+        <div class="cake-list">
+            <div class="cake-item satu">
+                <h3>chocochino</h3>
+                <p>Rasa kopi dominan coklat</p>
+            </div>
+            <div class="cake-item dua">
+                <h3>vanilla latte</h3>
+                <p>Rasa manis yang sngat creamy</p>
+            </div>
+            <div class="cake-item" style="background-color: #4865c5;">
+                <h3>carrebian nut</h3>
+                <p>Rasa kopi dengan kacang</p>
+            </div>
+        </div>
+    </div>
+</body>
 
-            <tr>
-                <td>2.</td>
-                <td>sousuke</td>
-                <td>20</td>
-            </tr>
-
-            <tr>
-                <td>3.</td>
-                <td>lisa</td>
-                <td>90</td>
-            </tr>
-
-
-         </table>
-         <!--tag penutup tabel-->
-         <hr>
-         
-</body> 
-</html>
+</html> 
